@@ -117,16 +117,6 @@ export const prodParasKusama: EndpointOption[] = [
     }
   },
   {
-    info: 'gm',
-    isUnreachable: true,
-    homepage: 'https://gmordie.com',
-    paraId: 2123,
-    text: 'GM Parachain',
-    providers: {
-      GMorDieDAO: 'wss://kusama.gmordie.com'
-    }
-  },
-  {
     info: 'imbue',
     homepage: 'https://imbue.network',
     paraId: 2121,
@@ -143,15 +133,6 @@ export const prodParasKusama: EndpointOption[] = [
     providers: {
       Integritee: 'wss://kusama.api.integritee.network',
       OnFinality: 'wss://integritee-kusama.api.onfinality.io/public-ws'
-    }
-  },
-  {
-    info: 'tinker',
-    homepage: 'https://invarch.network/tinkernet',
-    paraId: 2125,
-    text: 'InvArch Tinkernet',
-    providers: {
-      'InvArch Team': 'wss://tinker.invarch.network'
     }
   },
   {
@@ -302,7 +283,8 @@ export const prodParasKusama: EndpointOption[] = [
     text: 'Parallel Heiko',
     providers: {
       OnFinality: 'wss://parallel-heiko.api.onfinality.io/public-ws',
-      Parallel: 'wss://heiko-rpc.parallel.fi'
+      Parallel: 'wss://heiko-rpc.parallel.fi',
+      Dwellir: 'wss://heiko-rpc.dwellir.com'
     }
   },
   {
@@ -474,8 +456,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
     providers: {
       Parity: 'wss://statemine-rpc.polkadot.io',
       OnFinality: 'wss://statemine.api.onfinality.io/public-ws',
-      Dwellir: 'wss://statemine-rpc.dwellir.com',
-      Pinknode: 'wss://public-rpc.pinknode.io/statemine'
+      Dwellir: 'wss://statemine-rpc.dwellir.com'
     },
     teleport: [-1]
   },
@@ -502,8 +483,8 @@ export const prodRelayKusama: EndpointOption = {
     OnFinality: 'wss://kusama.api.onfinality.io/public-ws',
     Dwellir: 'wss://kusama-rpc.dwellir.com',
     RadiumBlock: 'wss://kusama.public.curie.radiumblock.co/ws',
-    Pinknode: 'wss://public-rpc.pinknode.io/kusama',
     // 'Geometry Labs': 'wss://kusama.geometry.io/websockets', // https://github.com/polkadot-js/apps/pull/6746
+    // Pinknode: 'wss://rpc.pinknode.io/kusama/explorer' // https://github.com/polkadot-js/apps/issues/5721
     'light client': 'light://substrate-connect/kusama'
   },
   teleport: [1000, 1001],

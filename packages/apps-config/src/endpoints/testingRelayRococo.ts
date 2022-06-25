@@ -17,10 +17,11 @@ import { ROCOCO_GENESIS } from '../api/constants';
 export const testParasRococo: EndpointOption[] = [
   {
     info: 'arctic',
-    paraId: 3015,
+    isUnreachable: true, // https://github.com/polkadot-js/apps/issues/7420
+    paraId: 3025,
     text: 'Arctic',
     providers: {
-      Arctic: 'wss://arctic-rococo-rpc.icenetwork.io'
+      Arctic: 'wss://arctic-rpc-parachain.icenetwork.io:9944'
     }
   },
   {
@@ -89,11 +90,12 @@ export const testParasRococo: EndpointOption[] = [
     }
   },
   {
-    info: 'helixstreet',
-    paraId: 3025,
-    text: 'Helixstreet',
+    info: 'rococoGM',
+    isUnreachable: true,
+    paraId: 3019,
+    text: 'GM Parachain',
     providers: {
-      Helixstreet: 'wss://rpc-rococo.helixstreet.io'
+      // 'GM or Die DAO': 'wss://rococo.gmordie.com' // https://github.com/polkadot-js/apps/issues/7716
     }
   },
   {

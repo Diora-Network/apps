@@ -249,7 +249,6 @@ export const testChains: EndpointOption[] = [
   },
   {
     info: 'jupiter',
-    isDisabled: true, // https://github.com/polkadot-js/apps/issues/7765
     text: 'Jupiter',
     providers: {
       Patract: 'wss://ws.jupiter-poa.patract.cn'
@@ -300,24 +299,11 @@ export const testChains: EndpointOption[] = [
     }
   },
   {
-    info: 'logion',
-    text: 'logion Parachain Testnet',
-    providers: {
-      Logion: 'wss://chimay.logion.network'
-    }
-  },
-  {
-    info: 'logion',
-    text: 'logion Standalone Testnet',
-    providers: {
-      Logion: 'wss://test-rpc01.logion.network'
-    }
-  },
-  {
     info: 'acala',
     text: 'Mandala',
     providers: {
       Acala: 'wss://mandala.polkawallet.io',
+      Pinknode: 'wss://rpc.pinknode.io/mandala/explorer',
       OnFinality: 'wss://acala-mandala.api.onfinality.io/public-ws'
     }
   },
@@ -609,7 +595,7 @@ export const testChains: EndpointOption[] = [
   },
   {
     info: 'zero',
-    text: 'Zero Alphaville',
+    text: 'Zero',
     providers: {
       ZERO: 'wss://alphaville.zero.io'
     }

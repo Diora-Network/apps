@@ -7,7 +7,6 @@ import Commonwealth from './commonwealth';
 import Dotreasury from './dotreasury';
 import DotScanner from './dotscanner';
 import KodaDot from './kodadot';
-import Polkaholic from './polkaholic';
 import Polkascan from './polkascan';
 import { PolkassemblyIo, PolkassemblyNetwork } from './polkassembly';
 import Polkastats from './polkastats';
@@ -22,7 +21,6 @@ export const externalLinks: Record<string, ExternalDef> = {
   DotScanner,
   Dotreasury,
   KodaDot,
-  Polkaholic,
   Polkascan,
   PolkassemblyIo,
   PolkassemblyNetwork,

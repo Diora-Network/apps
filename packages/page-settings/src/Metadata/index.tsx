@@ -16,7 +16,9 @@ export default function Metadata (): React.ReactElement {
   return (
     <>
       {!isDevelopment && (
-        <Extensions chainInfo={chainInfo} />
+        <>
+          <Extensions chainInfo={chainInfo} />
+        </>
       )}
       <NetworkSpecs chainInfo={chainInfo} />
     </>

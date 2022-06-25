@@ -164,13 +164,6 @@ export const prodChains: EndpointOption[] = [
     }
   },
   {
-    info: 'logion',
-    text: 'logion Standalone',
-    providers: {
-      Logion: 'wss://rpc01.logion.network'
-    }
-  },
-  {
     info: 'mathchain',
     text: 'MathChain',
     providers: {
@@ -184,13 +177,6 @@ export const prodChains: EndpointOption[] = [
     text: 'MiniX',
     providers: {
       ChainX: 'wss://minichain-mainnet.coming.chat/ws'
-    }
-  },
-  {
-    info: 'myriad',
-    text: 'Myriad',
-    providers: {
-      Myriad: 'wss://ws-rpc.myriad.social'
     }
   },
   {
@@ -267,7 +253,7 @@ export const prodChains: EndpointOption[] = [
       'SORA Parliament Ministry of Finance #2': 'wss://mof2.sora.org',
       'SORA Parliament Ministry of Finance': 'wss://ws.mof.sora.org',
       'SORA Parliament Ministry of Finance #3': 'wss://mof3.sora.org',
-      // Soramitsu: 'wss://ws.alb.sora.org', // https://github.com/polkadot-js/apps/issues/7786
+      Soramitsu: 'wss://ws.alb.sora.org',
       OnFinality: 'wss://sora.api.onfinality.io/public-ws'
       // 'SORA Community (Lux8)': 'wss://sora.lux8.net' // https://github.com/polkadot-js/apps/issues/6195
     }
@@ -310,8 +296,8 @@ export const prodChains: EndpointOption[] = [
     }
   },
   {
-    info: 'ternoa',
-    text: 'Ternoa',
+    info: 'ternoa-mainnet',
+    text: 'Ternoa Mainnet',
     providers: {
       CapsuleCorp: 'wss://mainnet.ternoa.network'
     }

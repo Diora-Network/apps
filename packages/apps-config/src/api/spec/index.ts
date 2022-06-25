@@ -68,8 +68,6 @@ import kusari from './kusari';
 import kylin from './kylin';
 import laminar from './laminar';
 import litentry from './litentry';
-import logion from './logion';
-import logionParachain from './logion-parachain';
 import mangata from './mangata';
 import manta from './manta';
 import mathchain from './mathchain';
@@ -213,8 +211,6 @@ const spec: Record<string, OverrideBundleDefinition> = {
   kylin,
   laminar,
   litentry,
-  logion,
-  'logion-parachain': logionParachain,
   mangata,
   'mangata-parachain': mangata,
   'manta-node': manta,
